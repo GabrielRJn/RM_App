@@ -1,5 +1,3 @@
-D:\RM App\RM App\RM App\bin\Debug\RMInformation.mdf
-D:\RM App\RM App\RM App\bin\Debug\RMInformation_log.ldf
 D:\RM App\RM App\RM App\bin\Debug\RM App.exe.config
 D:\RM App\RM App\RM App\bin\Debug\RM App.exe
 D:\RM App\RM App\RM App\bin\Debug\RM App.pdb
@@ -11,3 +9,8 @@ D:\RM App\RM App\RM App\obj\Debug\RM App.csproj.GenerateResource.cache
 D:\RM App\RM App\RM App\obj\Debug\RM App.csproj.CoreCompileInputs.cache
 D:\RM App\RM App\RM App\obj\Debug\RM App.exe
 D:\RM App\RM App\RM App\obj\Debug\RM App.pdb
+D:\RM App\RM App\RM App\bin\Debug\AppInformation.mdf
+D:\RM App\RM App\RM App\bin\Debug\AppInformation_log.ldf
+D:\RM App\RM App\RM App\obj\Debug\RM_App.Clients_page.resources
+D:\RM App\RM App\RM App\obj\Debug\RM_App_FrontEnd.Clients_page.resources
+D:\RM App\RM App\RM App\obj\Debug\RM_App_FrontEnd.Login_page.resources

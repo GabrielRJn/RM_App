@@ -27,6 +27,8 @@
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -50,6 +52,15 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -61,16 +72,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connection.cs" />
-    <Compile Include="Login_page.cs">
+    <Compile Include="Backend classes\Controller\Clientpage_Backend.cs" />
+    <Compile Include="Backend classes\Controller\Loginpage_Backend.cs" />
+    <Compile Include="Backend classes\Repository\AppInformationDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppInformationDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Backend classes\Repository\AppInformationDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppInformationDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend classes\View\Clients_page.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login_page.Designer.cs">
+    <Compile Include="Frontend classes\View\Clients_page.Designer.cs">
+      <DependentUpon>Clients_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Backend classes\Repository\Connection.cs" />
+    <Compile Include="Frontend classes\View\Login_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend classes\View\Login_page.Designer.cs">
       <DependentUpon>Login_page.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="Backend classes\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Login_page.resx">
+    <EmbeddedResource Include="Frontend classes\View\Clients_page.resx">
+      <DependentUpon>Clients_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend classes\View\Login_page.resx">
       <DependentUpon>Login_page.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -82,6 +114,28 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Backend classes\Repository\AppInformationDataSet.xsc">
+      <DependentUpon>AppInformationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Backend classes\Repository\AppInformationDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AppInformationDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Backend classes\Repository\AppInformationDataSet.xss">
+      <DependentUpon>AppInformationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Backend classes\Repository\AppInformationDataSet1.xsc">
+      <DependentUpon>AppInformationDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Backend classes\Repository\AppInformationDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AppInformationDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Backend classes\Repository\AppInformationDataSet1.xss">
+      <DependentUpon>AppInformationDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -96,12 +150,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="RMInformation.mdf">
+    <Content Include="Backend classes\Repository\AppInformation.mdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="RMInformation_log.ldf">
+    <Content Include="Backend classes\Repository\AppInformation_log.ldf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <DependentUpon>RMInformation.mdf</DependentUpon>
+      <DependentUpon>AppInformation.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>
@@ -115,6 +169,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Backend classes\Model\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
