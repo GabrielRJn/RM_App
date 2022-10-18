@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
@@ -51,7 +51,7 @@
             this.appInformationDataSet = new RM_App.Backend_classes.Repository.AppInformationDataSet();
             this.clientsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.clientsTableAdapter = new RM_App.Backend_classes.Repository.AppInformationDataSetTableAdapters.clientsTableAdapter();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.clientsDisplay = new System.Windows.Forms.DataGridView();
             this.firstnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lastnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,7 +65,7 @@
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.appInformationDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientsDisplay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appInformationDataSet1)).BeginInit();
             this.SuspendLayout();
@@ -82,7 +82,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-6, -2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(270, 933);
+            this.panel1.Size = new System.Drawing.Size(271, 933);
             this.panel1.TabIndex = 0;
             // 
             // label2
@@ -122,6 +122,7 @@
             this.button4.Text = "Log out";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -238,7 +239,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(719, 53);
+            this.label5.Location = new System.Drawing.Point(713, 53);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(163, 32);
             this.label5.TabIndex = 2;
@@ -248,7 +249,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(514, 53);
+            this.label4.Location = new System.Drawing.Point(514, 58);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(72, 32);
             this.label4.TabIndex = 1;
@@ -258,7 +259,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(64, 53);
+            this.label3.Location = new System.Drawing.Point(62, 53);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(166, 32);
             this.label3.TabIndex = 0;
@@ -279,36 +280,36 @@
             // 
             this.clientsTableAdapter.ClearBeforeFill = true;
             // 
-            // dataGridView1
+            // clientsDisplay
             // 
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.clientsDisplay.AllowUserToOrderColumns = true;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.clientsDisplay.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.clientsDisplay.AutoGenerateColumns = false;
+            this.clientsDisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.clientsDisplay.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.clientsDisplay.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.clientsDisplay.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.firstnameDataGridViewTextBoxColumn,
             this.lastnameDataGridViewTextBoxColumn,
             this.emailDataGridViewTextBoxColumn,
             this.preferredtagsDataGridViewTextBoxColumn,
             this.preferredproductsDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.clientsBindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(271, 241);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1221, 150);
-            this.dataGridView1.TabIndex = 3;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
+            this.clientsDisplay.DataSource = this.clientsBindingSource1;
+            this.clientsDisplay.Location = new System.Drawing.Point(265, 241);
+            this.clientsDisplay.Name = "clientsDisplay";
+            this.clientsDisplay.RowHeadersWidth = 62;
+            this.clientsDisplay.RowTemplate.Height = 28;
+            this.clientsDisplay.Size = new System.Drawing.Size(1227, 150);
+            this.clientsDisplay.TabIndex = 3;
+            this.clientsDisplay.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
             // firstnameDataGridViewTextBoxColumn
             // 
             this.firstnameDataGridViewTextBoxColumn.DataPropertyName = "first_name";
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.firstnameDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstnameDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
             this.firstnameDataGridViewTextBoxColumn.HeaderText = "first_name";
             this.firstnameDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.firstnameDataGridViewTextBoxColumn.Name = "firstnameDataGridViewTextBoxColumn";
@@ -365,7 +366,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1484, 924);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.clientsDisplay);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -380,7 +381,7 @@
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.appInformationDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientsDisplay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.appInformationDataSet1)).EndInit();
             this.ResumeLayout(false);
@@ -409,7 +410,7 @@
         private RM_App.Backend_classes.Repository.AppInformationDataSet appInformationDataSet;
         private System.Windows.Forms.BindingSource clientsBindingSource;
         private RM_App.Backend_classes.Repository.AppInformationDataSetTableAdapters.clientsTableAdapter clientsTableAdapter;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView clientsDisplay;
         private RM_App.Backend_classes.Repository.AppInformationDataSet1 appInformationDataSet1;
         private System.Windows.Forms.BindingSource clientsBindingSource1;
         private RM_App.Backend_classes.Repository.AppInformationDataSet1TableAdapters.clientsTableAdapter clientsTableAdapter1;

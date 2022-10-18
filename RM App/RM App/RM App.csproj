@@ -50,7 +50,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
     <Reference Include="System.DirectoryServices.AccountManagement" />
@@ -74,6 +76,9 @@
   <ItemGroup>
     <Compile Include="Backend classes\Controller\Clientpage_Backend.cs" />
     <Compile Include="Backend classes\Controller\Loginpage_Backend.cs" />
+    <Compile Include="Backend classes\Controller\MultipageFunctions.cs" />
+    <Compile Include="Backend classes\Model\Client.cs" />
+    <Compile Include="Backend classes\Model\Idea.cs" />
     <Compile Include="Backend classes\Repository\AppInformationDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -170,8 +175,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Backend classes\Model\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

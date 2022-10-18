@@ -7,20 +7,26 @@ using System.Threading.Tasks;
 using RM_App_Backend;
 using System.Windows.Forms;
 using RM_App_FrontEnd;
+using System.Text.RegularExpressions;
+using System.Security.Cryptography.X509Certificates;
 
 namespace RM_App.Backend_classes.Controller
 {
     internal class Loginpage_Backend
     {
+       
+    
         public static void findUser(Login_page instance, String email, String password)
             //passing in the current instance of the loginpage (instance) textbox text to manipulate
         {
+
             Connection con = Connection.getDBConnection();
 
             /*Count the number of results found for the text entered into the textbox. 
              *If the user enters the correct username and password, there will be an exact match from the
              *query, resulting in the if statement being true.
              */
+
             DataSet result = con.getDataSet("SELECT Count(*) FROM rm_data WHERE email='" + email + "'AND password = '" + password + "'");
             if (result.Tables[0].Rows[0][0].Equals(1))
             {
@@ -29,14 +35,39 @@ namespace RM_App.Backend_classes.Controller
                 MessageBox.Show("Login page is working");
                 //for testing purposes
 
+                Clients_page allClients = new Clients_page();
+                allClients.Show();
+
+                /*
+                 * Until the homepage is made/functioning, it will directly load to the 
+                 * 'All Clients page'
+                 */
             }
             else
             {
-                MessageBox.Show("Username or password is incorrect");
+                MessageBox.Show("email or password is incorrect");
             }
             {
 
             }
         }
+
+      
+       
+
+        public static void checkEnteredEmail(string email, Login_page label )
+        {//checks if a valid email is entered
+            Regex emailRegex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
+            Match match = emailRegex.Match(email);
+            if (!match.Success) {
+                label.Text = "*You have not entered an email";
+            }
+        }
+
+        public static void showText(TextBox textBox2)
+        {
+            textBox2.PasswordChar = (char) 0;
+        }
     }
+
 }

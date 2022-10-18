@@ -60,8 +60,14 @@ namespace RM_App_FrontEnd
 
         private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
-         
-            AppInformation.DataSource = ds.Tables[0];
+
+
+            //clientsDisplay.DataSource = RM_App.Backend_classes.Controller.Clientpage_Backend.getAllClients();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            RM_App.Backend_classes.Controller.MultipageFunctions.showNewPage(this, new Login_page());
         }
     }
 }
