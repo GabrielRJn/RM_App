@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using RM_App.Backend_classes.Model;
 
 namespace RM_App_FrontEnd
 {
@@ -68,6 +69,46 @@ namespace RM_App_FrontEnd
         private void button4_Click(object sender, EventArgs e)
         {
             RM_App.Backend_classes.Controller.MultipageFunctions.showNewPage(this, new Login_page());
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FilterBy_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Client er = new Client("Gab", "John");
+
+            Client er2 = new Client("123", "John");
+
+            List<Client> clients = new List<Client>();
+            clients.Add(er);
+            clients.Add(er2);
+
+            listBox1.DataSource = clients;
+            
+
         }
     }
 }

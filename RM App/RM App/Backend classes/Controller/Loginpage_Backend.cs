@@ -12,10 +12,11 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace RM_App.Backend_classes.Controller
 {
+    
     internal class Loginpage_Backend
     {
-       
-    
+
+        //static string loggedInUser;
         public static void findUser(Login_page instance, String email, String password)
             //passing in the current instance of the loginpage (instance) textbox text to manipulate
         {
@@ -34,7 +35,9 @@ namespace RM_App.Backend_classes.Controller
                 instance.Hide();
                 MessageBox.Show("Login page is working");
                 //for testing purposes
+               // DataSet user = con.getDataSet("SELECT * FROM rm_data WHERE email'" + email + "'");
 
+                //get the first name and last name of the user where entered email text is equal to email
                 Clients_page allClients = new Clients_page();
                 allClients.Show();
 
@@ -43,7 +46,7 @@ namespace RM_App.Backend_classes.Controller
                  * 'All Clients page'
                  */
             }
-            else
+            
             {
                 MessageBox.Show("email or password is incorrect");
             }

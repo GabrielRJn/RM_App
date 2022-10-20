@@ -89,13 +89,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppInformationDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Backend classes\Service\Class1.cs" />
     <Compile Include="Frontend classes\View\Clients_page.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frontend classes\View\Clients_page.Designer.cs">
       <DependentUpon>Clients_page.cs</DependentUpon>
     </Compile>
-    <Compile Include="Backend classes\Repository\Connection.cs" />
+    <Compile Include="Backend classes\Service\Connection.cs" />
     <Compile Include="Frontend classes\View\Login_page.cs">
       <SubType>Form</SubType>
     </Compile>

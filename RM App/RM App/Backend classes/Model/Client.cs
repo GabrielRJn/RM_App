@@ -24,5 +24,11 @@ namespace RM_App.Backend_classes.Model
             this.prefferedTags = prefferedTags;
             this.products = products;
         }
+
+        public Client (string firstName, string lastName)
+        {
+            this.firstName = firstName;
+            this.lastName = lastName;
+        }
     }
 }
