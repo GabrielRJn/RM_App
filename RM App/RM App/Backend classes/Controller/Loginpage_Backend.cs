@@ -45,8 +45,7 @@ namespace RM_App.Backend_classes.Controller
                  * Until the homepage is made/functioning, it will directly load to the 
                  * 'All Clients page'
                  */
-            }
-            
+            }else
             {
                 MessageBox.Show("email or password is incorrect");
             }
@@ -58,14 +57,7 @@ namespace RM_App.Backend_classes.Controller
       
        
 
-        public static void checkEnteredEmail(string email, Login_page label )
-        {//checks if a valid email is entered
-            Regex emailRegex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
-            Match match = emailRegex.Match(email);
-            if (!match.Success) {
-                label.Text = "*You have not entered an email";
-            }
-        }
+       
 
         public static void showText(TextBox textBox2)
         {

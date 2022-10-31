@@ -89,7 +89,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppInformationDataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Backend classes\Service\Class1.cs" />
+    <Compile Include="Backend classes\Service\ClientService.cs" />
+    <Compile Include="clientdisplay.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>clientdisplay.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Frontend classes\View\Clients_page.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +147,17 @@
     <None Include="Backend classes\Repository\AppInformationDataSet1.xss">
       <DependentUpon>AppInformationDataSet1.xsd</DependentUpon>
     </None>
+    <None Include="clientdisplay.xsc">
+      <DependentUpon>clientdisplay.xsd</DependentUpon>
+    </None>
+    <None Include="clientdisplay.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>clientdisplay.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="clientdisplay.xss">
+      <DependentUpon>clientdisplay.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -176,6 +192,8 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

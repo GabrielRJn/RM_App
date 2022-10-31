@@ -21,11 +21,9 @@ namespace RM_App_FrontEnd
 
         private void Clients_page_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'appInformationDataSet1.clients' table. You can move, or remove it, as needed.
-            this.clientsTableAdapter1.Fill(this.appInformationDataSet1.clients);
-            // TODO: This line of code loads data into the 'appInformationDataSet.clients' table. You can move, or remove it, as needed.
-            this.clientsTableAdapter.Fill(this.appInformationDataSet.clients);
-
+            // TODO: This line of code loads data into the 'clientdisplay.clients' table. You can move, or remove it, as needed.
+            this.clientsTableAdapter2.Fill(this.clientdisplay.clients);
+           
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -62,10 +60,8 @@ namespace RM_App_FrontEnd
         private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
 
-
-            //clientsDisplay.DataSource = RM_App.Backend_classes.Controller.Clientpage_Backend.getAllClients();
+          
         }
-
         private void button4_Click(object sender, EventArgs e)
         {
             RM_App.Backend_classes.Controller.MultipageFunctions.showNewPage(this, new Login_page());
@@ -98,16 +94,55 @@ namespace RM_App_FrontEnd
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Client er = new Client("Gab", "John");
-
-            Client er2 = new Client("123", "John");
-
-            List<Client> clients = new List<Client>();
-            clients.Add(er);
-            clients.Add(er2);
-
-            listBox1.DataSource = clients;
             
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            addClientPanel.Visible = true;
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            RM_App.Backend_classes.Controller.Clientpage_Backend.saveClient(firstNameBox.Text, lastNameBox.Text, emailBox.Text);
+            this.clientsBindingSource2.DataSource = RM_App.Backend_classes.Service.ClientService.getAllClients();
+            clientsDisplay.Update();
+            addClientPanel.Visible = false;
+        }
+
+        private void firstNameBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void viewClientsPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void addClientPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lastNameBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void emailBox_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

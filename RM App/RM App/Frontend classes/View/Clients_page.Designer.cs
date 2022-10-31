@@ -29,13 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.logoutBtn = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -51,7 +47,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.FilterBy = new System.Windows.Forms.ComboBox();
-            this.button7 = new System.Windows.Forms.Button();
+            this.addClientButton = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -64,49 +60,64 @@
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.preferredtagsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.preferredproductsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clientsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.clientdisplay = new RM_App.clientdisplay();
             this.clientsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.appInformationDataSet1 = new RM_App.Backend_classes.Repository.AppInformationDataSet1();
             this.clientsTableAdapter1 = new RM_App.Backend_classes.Repository.AppInformationDataSet1TableAdapters.clientsTableAdapter();
             this.appInformationDataSet2 = new RM_App.Backend_classes.Repository.AppInformationDataSet();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.viewClientsPanel = new System.Windows.Forms.Panel();
+            this.addClientPanel = new System.Windows.Forms.Panel();
+            this.riskBox = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.tagsBox = new System.Windows.Forms.CheckedListBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
+            this.emailBox = new System.Windows.Forms.TextBox();
+            this.lastNameBox = new System.Windows.Forms.TextBox();
+            this.firstNameBox = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.clientsTableAdapter2 = new RM_App.clientdisplayTableAdapters.clientsTableAdapter();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.appInformationDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsDisplay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientdisplay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appInformationDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appInformationDataSet2)).BeginInit();
+            this.viewClientsPanel.SuspendLayout();
+            this.addClientPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Controls.Add(this.logoutBtn);
+            this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(-6, 100);
+            this.panel1.Location = new System.Drawing.Point(1, 67);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(271, 925);
+            this.panel1.Size = new System.Drawing.Size(181, 545);
             this.panel1.TabIndex = 0;
             // 
-            // logoutBtn
+            // panel5
             // 
-            this.logoutBtn.BackColor = System.Drawing.Color.Black;
-            this.logoutBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.logoutBtn.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logoutBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.logoutBtn.Location = new System.Drawing.Point(7, 741);
-            this.logoutBtn.Name = "logoutBtn";
-            this.logoutBtn.Size = new System.Drawing.Size(267, 71);
-            this.logoutBtn.TabIndex = 5;
-            this.logoutBtn.Text = "Log out";
-            this.logoutBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.logoutBtn.UseVisualStyleBackColor = false;
+            this.panel5.Location = new System.Drawing.Point(181, 269);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(952, 267);
+            this.panel5.TabIndex = 4;
             // 
             // button4
             // 
@@ -114,9 +125,10 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button4.Location = new System.Drawing.Point(3, 859);
+            this.button4.Location = new System.Drawing.Point(2, 558);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(267, 71);
+            this.button4.Size = new System.Drawing.Size(178, 46);
             this.button4.TabIndex = 4;
             this.button4.Text = "Log out";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -129,9 +141,10 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Location = new System.Drawing.Point(7, 154);
+            this.button3.Location = new System.Drawing.Point(5, 100);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(267, 71);
+            this.button3.Size = new System.Drawing.Size(178, 46);
             this.button3.TabIndex = 3;
             this.button3.Text = "View ideas";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -144,9 +157,10 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(7, 86);
+            this.button2.Location = new System.Drawing.Point(5, 56);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(267, 71);
+            this.button2.Size = new System.Drawing.Size(178, 46);
             this.button2.TabIndex = 2;
             this.button2.Text = "View clients";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -159,9 +173,10 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(3, 9);
+            this.button1.Location = new System.Drawing.Point(2, 6);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(267, 71);
+            this.button1.Size = new System.Drawing.Size(178, 46);
             this.button1.TabIndex = 1;
             this.button1.Text = "Home";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -174,7 +189,8 @@
             this.label1.BackColor = System.Drawing.SystemColors.MenuText;
             this.label1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(64, 243);
+            this.label1.Location = new System.Drawing.Point(43, 158);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 30);
             this.label1.TabIndex = 0;
@@ -184,7 +200,8 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(14, 50);
+            this.label2.Location = new System.Drawing.Point(9, 32);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(162, 28);
             this.label2.TabIndex = 6;
@@ -197,7 +214,8 @@
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(14, 18);
+            this.linkLabel1.Location = new System.Drawing.Point(9, 12);
+            this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(86, 32);
             this.linkLabel1.TabIndex = 5;
@@ -213,17 +231,19 @@
             this.panel2.Controls.Add(this.linkLabel1);
             this.panel2.Controls.Add(this.button5);
             this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Location = new System.Drawing.Point(-2, -2);
+            this.panel2.Location = new System.Drawing.Point(-1, -1);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1695, 105);
+            this.panel2.Size = new System.Drawing.Size(1130, 68);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // panel3
             // 
-            this.panel3.Location = new System.Drawing.Point(0, 147);
+            this.panel3.Location = new System.Drawing.Point(0, 96);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1227, 783);
+            this.panel3.Size = new System.Drawing.Size(818, 509);
             this.panel3.TabIndex = 2;
             // 
             // button5
@@ -232,9 +252,10 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button5.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(844, 38);
+            this.button5.Location = new System.Drawing.Point(563, 25);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(94, 40);
+            this.button5.Size = new System.Drawing.Size(63, 26);
             this.button5.TabIndex = 1;
             this.button5.Text = "Search";
             this.button5.UseVisualStyleBackColor = false;
@@ -242,11 +263,13 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(351, 38);
+            this.textBox1.Location = new System.Drawing.Point(234, 25);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(498, 40);
+            this.textBox1.Size = new System.Drawing.Size(333, 27);
             this.textBox1.TabIndex = 0;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // directorySearcher1
             // 
@@ -260,15 +283,16 @@
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel4.Controls.Add(this.label6);
             this.panel4.Controls.Add(this.FilterBy);
-            this.panel4.Controls.Add(this.button7);
+            this.panel4.Controls.Add(this.addClientButton);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel4.Location = new System.Drawing.Point(265, 103);
+            this.panel4.Location = new System.Drawing.Point(0, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1428, 119);
+            this.panel4.Size = new System.Drawing.Size(951, 52);
             this.panel4.TabIndex = 2;
             // 
             // label6
@@ -276,7 +300,8 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label6.Location = new System.Drawing.Point(1087, 28);
+            this.label6.Location = new System.Drawing.Point(725, 18);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(180, 32);
             this.label6.TabIndex = 7;
@@ -288,30 +313,34 @@
             this.FilterBy.Items.AddRange(new object[] {
             "Date",
             "Name (A-Z)"});
-            this.FilterBy.Location = new System.Drawing.Point(1265, 32);
+            this.FilterBy.Location = new System.Drawing.Point(843, 21);
+            this.FilterBy.Margin = new System.Windows.Forms.Padding(2);
             this.FilterBy.Name = "FilterBy";
-            this.FilterBy.Size = new System.Drawing.Size(151, 33);
+            this.FilterBy.Size = new System.Drawing.Size(102, 33);
             this.FilterBy.TabIndex = 10;
             this.FilterBy.SelectedIndexChanged += new System.EventHandler(this.FilterBy_SelectedIndexChanged);
             // 
-            // button7
+            // addClientButton
             // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button7.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(904, 25);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(138, 40);
-            this.button7.TabIndex = 8;
-            this.button7.Text = "Add Client";
-            this.button7.UseVisualStyleBackColor = false;
+            this.addClientButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.addClientButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.addClientButton.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addClientButton.ForeColor = System.Drawing.Color.White;
+            this.addClientButton.Location = new System.Drawing.Point(603, 16);
+            this.addClientButton.Margin = new System.Windows.Forms.Padding(2);
+            this.addClientButton.Name = "addClientButton";
+            this.addClientButton.Size = new System.Drawing.Size(92, 26);
+            this.addClientButton.TabIndex = 8;
+            this.addClientButton.Text = "Add Client";
+            this.addClientButton.UseVisualStyleBackColor = false;
+            this.addClientButton.Click += new System.EventHandler(this.button7_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(714, 87);
+            this.label5.Location = new System.Drawing.Point(476, 57);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(135, 32);
             this.label5.TabIndex = 2;
@@ -321,7 +350,8 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(508, 87);
+            this.label4.Location = new System.Drawing.Point(339, 57);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(60, 32);
             this.label4.TabIndex = 1;
@@ -331,7 +361,8 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(57, 87);
+            this.label3.Location = new System.Drawing.Point(38, 57);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(147, 32);
             this.label3.TabIndex = 0;
@@ -355,21 +386,13 @@
             // clientsDisplay
             // 
             this.clientsDisplay.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.clientsDisplay.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.clientsDisplay.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.clientsDisplay.AutoGenerateColumns = false;
             this.clientsDisplay.BackgroundColor = System.Drawing.Color.White;
             this.clientsDisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.clientsDisplay.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.clientsDisplay.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.clientsDisplay.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.clientsDisplay.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.firstnameDataGridViewTextBoxColumn,
@@ -377,37 +400,20 @@
             this.emailDataGridViewTextBoxColumn,
             this.preferredtagsDataGridViewTextBoxColumn,
             this.preferredproductsDataGridViewTextBoxColumn});
-            this.clientsDisplay.DataSource = this.clientsBindingSource1;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.clientsDisplay.DefaultCellStyle = dataGridViewCellStyle9;
+            this.clientsDisplay.DataSource = this.clientsBindingSource2;
             this.clientsDisplay.GridColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.clientsDisplay.Location = new System.Drawing.Point(265, 241);
+            this.clientsDisplay.Location = new System.Drawing.Point(-1, 50);
+            this.clientsDisplay.Margin = new System.Windows.Forms.Padding(2);
             this.clientsDisplay.Name = "clientsDisplay";
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.clientsDisplay.RowHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.clientsDisplay.RowHeadersWidth = 62;
             this.clientsDisplay.RowTemplate.Height = 28;
-            this.clientsDisplay.Size = new System.Drawing.Size(1428, 684);
+            this.clientsDisplay.Size = new System.Drawing.Size(952, 493);
             this.clientsDisplay.TabIndex = 3;
             this.clientsDisplay.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
             // firstnameDataGridViewTextBoxColumn
             // 
             this.firstnameDataGridViewTextBoxColumn.DataPropertyName = "first_name";
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.firstnameDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle8;
             this.firstnameDataGridViewTextBoxColumn.HeaderText = "first_name";
             this.firstnameDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.firstnameDataGridViewTextBoxColumn.Name = "firstnameDataGridViewTextBoxColumn";
@@ -435,15 +441,25 @@
             this.preferredtagsDataGridViewTextBoxColumn.HeaderText = "preferred_tags";
             this.preferredtagsDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.preferredtagsDataGridViewTextBoxColumn.Name = "preferredtagsDataGridViewTextBoxColumn";
-            this.preferredtagsDataGridViewTextBoxColumn.Width = 200;
+            this.preferredtagsDataGridViewTextBoxColumn.Width = 150;
             // 
             // preferredproductsDataGridViewTextBoxColumn
             // 
-            this.preferredproductsDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.preferredproductsDataGridViewTextBoxColumn.DataPropertyName = "preferred_products";
             this.preferredproductsDataGridViewTextBoxColumn.HeaderText = "preferred_products";
             this.preferredproductsDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.preferredproductsDataGridViewTextBoxColumn.Name = "preferredproductsDataGridViewTextBoxColumn";
+            this.preferredproductsDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // clientsBindingSource2
+            // 
+            this.clientsBindingSource2.DataMember = "clients";
+            this.clientsBindingSource2.DataSource = this.clientdisplay;
+            // 
+            // clientdisplay
+            // 
+            this.clientdisplay.DataSetName = "clientdisplay";
+            this.clientdisplay.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // clientsBindingSource1
             // 
@@ -464,28 +480,196 @@
             this.appInformationDataSet2.DataSetName = "AppInformationDataSet";
             this.appInformationDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // listBox1
+            // viewClientsPanel
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 20;
-            this.listBox1.Location = new System.Drawing.Point(531, 317);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(253, 124);
-            this.listBox1.TabIndex = 4;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.viewClientsPanel.Controls.Add(this.addClientPanel);
+            this.viewClientsPanel.Controls.Add(this.clientsDisplay);
+            this.viewClientsPanel.Controls.Add(this.panel4);
+            this.viewClientsPanel.Location = new System.Drawing.Point(177, 67);
+            this.viewClientsPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.viewClientsPanel.Name = "viewClientsPanel";
+            this.viewClientsPanel.Size = new System.Drawing.Size(951, 545);
+            this.viewClientsPanel.TabIndex = 4;
+            this.viewClientsPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.viewClientsPanel_Paint);
+            // 
+            // addClientPanel
+            // 
+            this.addClientPanel.BackColor = System.Drawing.Color.White;
+            this.addClientPanel.Controls.Add(this.riskBox);
+            this.addClientPanel.Controls.Add(this.label12);
+            this.addClientPanel.Controls.Add(this.label11);
+            this.addClientPanel.Controls.Add(this.tagsBox);
+            this.addClientPanel.Controls.Add(this.label10);
+            this.addClientPanel.Controls.Add(this.label9);
+            this.addClientPanel.Controls.Add(this.label8);
+            this.addClientPanel.Controls.Add(this.button6);
+            this.addClientPanel.Controls.Add(this.emailBox);
+            this.addClientPanel.Controls.Add(this.lastNameBox);
+            this.addClientPanel.Controls.Add(this.firstNameBox);
+            this.addClientPanel.Controls.Add(this.label7);
+            this.addClientPanel.Location = new System.Drawing.Point(0, 0);
+            this.addClientPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.addClientPanel.Name = "addClientPanel";
+            this.addClientPanel.Size = new System.Drawing.Size(951, 538);
+            this.addClientPanel.TabIndex = 4;
+            this.addClientPanel.Visible = false;
+            this.addClientPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.addClientPanel_Paint);
+            // 
+            // riskBox
+            // 
+            this.riskBox.Location = new System.Drawing.Point(62, 434);
+            this.riskBox.Margin = new System.Windows.Forms.Padding(2);
+            this.riskBox.Multiline = true;
+            this.riskBox.Name = "riskBox";
+            this.riskBox.Size = new System.Drawing.Size(43, 24);
+            this.riskBox.TabIndex = 14;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(58, 403);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(182, 32);
+            this.label12.TabIndex = 13;
+            this.label12.Text = "Risk Percentage";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(58, 295);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(60, 32);
+            this.label11.TabIndex = 12;
+            this.label11.Text = "Tags";
+            // 
+            // tagsBox
+            // 
+            this.tagsBox.AllowDrop = true;
+            this.tagsBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tagsBox.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tagsBox.FormattingEnabled = true;
+            this.tagsBox.HorizontalExtent = 100;
+            this.tagsBox.Items.AddRange(new object[] {
+            "Tag 1",
+            "Tag 2",
+            "Tag 3",
+            "Tag 4"});
+            this.tagsBox.Location = new System.Drawing.Point(62, 327);
+            this.tagsBox.Margin = new System.Windows.Forms.Padding(2);
+            this.tagsBox.MultiColumn = true;
+            this.tagsBox.Name = "tagsBox";
+            this.tagsBox.Size = new System.Drawing.Size(454, 62);
+            this.tagsBox.TabIndex = 11;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(306, 124);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(122, 32);
+            this.label10.TabIndex = 10;
+            this.label10.Text = "Last name";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(58, 124);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(125, 32);
+            this.label9.TabIndex = 9;
+            this.label9.Text = "First name";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(58, 211);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(71, 32);
+            this.label8.TabIndex = 8;
+            this.label8.Text = "Email";
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button6.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Location = new System.Drawing.Point(62, 486);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(104, 26);
+            this.button6.TabIndex = 7;
+            this.button6.Text = "Save client";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click_1);
+            // 
+            // emailBox
+            // 
+            this.emailBox.Location = new System.Drawing.Point(62, 233);
+            this.emailBox.Margin = new System.Windows.Forms.Padding(2);
+            this.emailBox.Multiline = true;
+            this.emailBox.Name = "emailBox";
+            this.emailBox.Size = new System.Drawing.Size(454, 28);
+            this.emailBox.TabIndex = 3;
+            this.emailBox.TextChanged += new System.EventHandler(this.emailBox_TextChanged);
+            // 
+            // lastNameBox
+            // 
+            this.lastNameBox.Location = new System.Drawing.Point(309, 146);
+            this.lastNameBox.Margin = new System.Windows.Forms.Padding(2);
+            this.lastNameBox.Multiline = true;
+            this.lastNameBox.Name = "lastNameBox";
+            this.lastNameBox.Size = new System.Drawing.Size(207, 28);
+            this.lastNameBox.TabIndex = 2;
+            this.lastNameBox.TextChanged += new System.EventHandler(this.lastNameBox_TextChanged);
+            // 
+            // firstNameBox
+            // 
+            this.firstNameBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.firstNameBox.Location = new System.Drawing.Point(62, 147);
+            this.firstNameBox.Margin = new System.Windows.Forms.Padding(2);
+            this.firstNameBox.Multiline = true;
+            this.firstNameBox.Name = "firstNameBox";
+            this.firstNameBox.Size = new System.Drawing.Size(207, 27);
+            this.firstNameBox.TabIndex = 1;
+            this.firstNameBox.TextChanged += new System.EventHandler(this.firstNameBox_TextChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Yu Gothic UI Light", 28F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(47, 29);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(276, 74);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Add Client";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // clientsTableAdapter2
+            // 
+            this.clientsTableAdapter2.ClearBeforeFill = true;
             // 
             // Clients_page
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1693, 924);
-            this.ControlBox = false;
-            this.Controls.Add(this.listBox1);
+            this.ClientSize = new System.Drawing.Size(1129, 612);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.clientsDisplay);
-            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.viewClientsPanel);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "Clients_page";
             this.ShowIcon = false;
@@ -500,9 +684,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.appInformationDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsDisplay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientdisplay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.appInformationDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.appInformationDataSet2)).EndInit();
+            this.viewClientsPanel.ResumeLayout(false);
+            this.addClientPanel.ResumeLayout(false);
+            this.addClientPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -533,16 +722,32 @@
         private RM_App.Backend_classes.Repository.AppInformationDataSet1 appInformationDataSet1;
         private System.Windows.Forms.BindingSource clientsBindingSource1;
         private RM_App.Backend_classes.Repository.AppInformationDataSet1TableAdapters.clientsTableAdapter clientsTableAdapter1;
+        private System.Windows.Forms.Button addClientButton;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox FilterBy;
+        private RM_App.Backend_classes.Repository.AppInformationDataSet appInformationDataSet2;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel viewClientsPanel;
+        private System.Windows.Forms.Panel addClientPanel;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox riskBox;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.CheckedListBox tagsBox;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.TextBox emailBox;
+        private System.Windows.Forms.TextBox lastNameBox;
+        private System.Windows.Forms.TextBox firstNameBox;
         private System.Windows.Forms.DataGridViewTextBoxColumn firstnameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn lastnameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn preferredtagsDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn preferredproductsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button logoutBtn;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox FilterBy;
-        private RM_App.Backend_classes.Repository.AppInformationDataSet appInformationDataSet2;
-        private System.Windows.Forms.ListBox listBox1;
+        private RM_App.clientdisplay clientdisplay;
+        private System.Windows.Forms.BindingSource clientsBindingSource2;
+        private RM_App.clientdisplayTableAdapters.clientsTableAdapter clientsTableAdapter2;
     }
 }
