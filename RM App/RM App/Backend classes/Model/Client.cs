@@ -9,7 +9,7 @@ using System.Runtime.CompilerServices;
 
 namespace RM_App.Backend_classes.Model
 {
-    internal class Client
+    internal class Client : User
     {
 
         /*
@@ -28,23 +28,20 @@ namespace RM_App.Backend_classes.Model
         private List<string> products;
 
         public Client(int clientID, string firstName, string lastName, string email, int rmID,
-            List<string> prefferedTags, List<string> products)
+            List<string> prefferedTags, List<string> products) : base(firstName, lastName, email)
         {
             this.clientID = clientID;
-            this.firstName = firstName;
-            this.lastName = lastName;
-            this.email = email;
             this.rmID = rmID;
             this.prefferedTags = prefferedTags;
             this.products = products;
         }
 
-        public Client()
+      public Client() : base()
         {
 
         }
 
-        public Client(string firstName, string lastName, string email)
+        public Client(string firstName, string lastName, string email) :base(firstName, lastName, email)
         {
             this.firstName = firstName;
             this.lastName = lastName;

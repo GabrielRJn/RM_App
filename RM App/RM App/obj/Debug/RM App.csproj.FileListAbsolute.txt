@@ -12,3 +12,18 @@ D:\RM App\RM App\RM App\obj\Debug\RM_App_FrontEnd.Clients_page.resources
 D:\RM App\RM App\RM App\obj\Debug\RM_App_FrontEnd.Login_page.resources
 D:\RM App\RM App\RM App\bin\Debug\Backend classes\Repository\AppInformation.mdf
 D:\RM App\RM App\RM App\bin\Debug\Backend classes\Repository\AppInformation_log.ldf
+D:\RM App\rm copy\RM_App\RM App\RM App\bin\Debug\Backend classes\Repository\AppInformation.mdf
+D:\RM App\rm copy\RM_App\RM App\RM App\bin\Debug\Backend classes\Repository\AppInformation_log.ldf
+D:\RM App\rm copy\RM_App\RM App\RM App\bin\Debug\RM App.exe.config
+D:\RM App\rm copy\RM_App\RM App\RM App\bin\Debug\RM App.exe
+D:\RM App\rm copy\RM_App\RM App\RM App\bin\Debug\RM App.pdb
+D:\RM App\rm copy\RM_App\RM App\RM App\obj\Debug\RM App.csproj.AssemblyReference.cache
+D:\RM App\rm copy\RM_App\RM App\RM App\obj\Debug\RM App.csproj.SuggestedBindingRedirects.cache
+D:\RM App\rm copy\RM_App\RM App\RM App\obj\Debug\RM_App_FrontEnd.Ideas_page.resources
+D:\RM App\rm copy\RM_App\RM App\RM App\obj\Debug\RM_App_FrontEnd.Clients_page.resources
+D:\RM App\rm copy\RM_App\RM App\RM App\obj\Debug\RM_App_FrontEnd.Login_page.resources
+D:\RM App\rm copy\RM_App\RM App\RM App\obj\Debug\RM_App.Properties.Resources.resources
+D:\RM App\rm copy\RM_App\RM App\RM App\obj\Debug\RM App.csproj.GenerateResource.cache
+D:\RM App\rm copy\RM_App\RM App\RM App\obj\Debug\RM App.csproj.CoreCompileInputs.cache
+D:\RM App\rm copy\RM_App\RM App\RM App\obj\Debug\RM App.exe
+D:\RM App\rm copy\RM_App\RM App\RM App\obj\Debug\RM App.pdb

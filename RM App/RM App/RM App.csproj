@@ -74,11 +74,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppInformationDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppInformationDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Backend classes\Controller\Clientpage_Backend.cs" />
     <Compile Include="Backend classes\Controller\Loginpage_Backend.cs" />
     <Compile Include="Backend classes\Controller\MultipageFunctions.cs" />
     <Compile Include="Backend classes\Model\Client.cs" />
     <Compile Include="Backend classes\Model\Idea.cs" />
+    <Compile Include="Backend classes\Model\RelationshipManager.cs" />
+    <Compile Include="Backend classes\Model\User.cs" />
     <Compile Include="Backend classes\Repository\AppInformationDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -90,10 +97,17 @@
       <DependentUpon>AppInformationDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="Backend classes\Service\ClientService.cs" />
+    <Compile Include="Backend classes\Service\IdeaService.cs" />
     <Compile Include="clientdisplay.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>clientdisplay.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend classes\View\Idea_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend classes\View\Idea_page.Designer.cs">
+      <DependentUpon>Idea_page.cs</DependentUpon>
     </Compile>
     <Compile Include="Frontend classes\View\Clients_page.cs">
       <SubType>Form</SubType>
@@ -109,7 +123,15 @@
       <DependentUpon>Login_page.cs</DependentUpon>
     </Compile>
     <Compile Include="Backend classes\Program.cs" />
+    <Compile Include="ideasData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ideasData.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frontend classes\View\Idea_page.resx">
+      <DependentUpon>Idea_page.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frontend classes\View\Clients_page.resx">
       <DependentUpon>Clients_page.cs</DependentUpon>
     </EmbeddedResource>
@@ -125,6 +147,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="AppInformationDataSet.xsc">
+      <DependentUpon>AppInformationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AppInformationDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AppInformationDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AppInformationDataSet.xss">
+      <DependentUpon>AppInformationDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Backend classes\Repository\AppInformationDataSet.xsc">
       <DependentUpon>AppInformationDataSet.xsd</DependentUpon>
     </None>
@@ -157,6 +190,17 @@
     </None>
     <None Include="clientdisplay.xss">
       <DependentUpon>clientdisplay.xsd</DependentUpon>
+    </None>
+    <None Include="ideasData.xsc">
+      <DependentUpon>ideasData.xsd</DependentUpon>
+    </None>
+    <None Include="ideasData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ideasData.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ideasData.xss">
+      <DependentUpon>ideasData.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

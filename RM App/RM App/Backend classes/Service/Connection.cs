@@ -57,18 +57,17 @@ namespace RM_App_Backend
         /*we need a similar method that does not return any dataset for when
          * we are only saving or updating data in the database
          */
-        public static void saveOrUpdateData( Client newClient)
+        public static void saveOrUpdateData( string query)
         {
             using (conToDB = new SqlConnection(conString))
             {
 
                 conToDB.Open();
-                SqlCommand cmd = new SqlCommand("INSERT INTO clients" +
-                 " (first_name, last_name, email) " +
-                 "VALUES ('" + newClient.FirstName + "','" + newClient.LastName + "','" + newClient.Email + "')", conToDB);
+
+                SqlCommand cmd = new SqlCommand(query, conToDB);
                 cmd.ExecuteNonQuery();
                 conToDB.Close();
-                MessageBox.Show("client added");
+               
 
             }
         }

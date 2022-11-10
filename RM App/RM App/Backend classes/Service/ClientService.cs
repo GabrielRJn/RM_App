@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using RM_App.Backend_classes.Model;
 using RM_App_Backend;
 
@@ -28,8 +29,9 @@ namespace RM_App.Backend_classes.Service
                 " (first_name, last_name, email) " +
                 "VALUES ('"+newClient.FirstName+"','"+newClient.LastName+"','"+newClient.Email+"')";
 
-            
-            
+
+            Connection.saveOrUpdateData(cmd);
+            MessageBox.Show("Client added");
 
         }
    
