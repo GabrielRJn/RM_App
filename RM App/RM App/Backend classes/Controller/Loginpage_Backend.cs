@@ -16,7 +16,6 @@ namespace RM_App.Backend_classes.Controller
     internal class Loginpage_Backend
     {
 
-        //static string loggedInUser;
         public static void findUser(Login_page instance, String email, String password)
             //passing in the current instance of the loginpage (instance) textbox text to manipulate
         {
@@ -43,7 +42,7 @@ namespace RM_App.Backend_classes.Controller
 
                 /*
                  * Until the homepage is made/functioning, it will directly load to the 
-                 * 'All Clients page'
+                 * 'All Clients page' -GJ
                  */
             }else
             {

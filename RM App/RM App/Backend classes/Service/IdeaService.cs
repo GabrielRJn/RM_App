@@ -12,6 +12,14 @@ namespace RM_App.Backend_classes.Service
 {
     internal class IdeaService
     {
+        /*
+         * All queries to manipulate (retrieve, update, delete) data in the ideas table will be in 
+         * this class to pass to the SQL connection.
+         * [The purpose of this class is to improve structure and further isolate model specific methods.
+         *  
+         *  More information on MVC service classes can be found here:
+         *  https://nbarbettini.gitbooks.io/little-asp-net-core-book/content/chapters/mvc-basics/add-service-class.html  ]
+         */
 
         public static void insertIdea(Idea idea)
         {

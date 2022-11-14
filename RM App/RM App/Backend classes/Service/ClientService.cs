@@ -16,7 +16,7 @@ namespace RM_App.Backend_classes.Service
     {
         public static DataTable getAllClients()
         {
-
+            
             DataSet ds = Connection.getDBConnection().getDataSet("SELECT * FROM clients");
             return ds.Tables[0];
 
@@ -24,7 +24,9 @@ namespace RM_App.Backend_classes.Service
 
         public static void insertClientData(Client newClient)
         {
-                
+            /*Responsible for passing client specific queries to the SQL connection after retrieving
+            / a client object
+            */
             string cmd = "INSERT INTO clients" +
                 " (first_name, last_name, email) " +
                 "VALUES ('"+newClient.FirstName+"','"+newClient.LastName+"','"+newClient.Email+"')";

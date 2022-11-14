@@ -10,7 +10,7 @@ namespace RM_App.Backend_classes.Controller
 {
     internal class MultipageFunctions
     {
-
+        //All classes that are not page specific can go here
         public static void showNewPage(Form oldPage, Form newPage)
         {
             oldPage.Hide();

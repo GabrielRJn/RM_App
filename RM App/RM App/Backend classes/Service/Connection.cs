@@ -39,7 +39,11 @@ namespace RM_App_Backend
         }
 
         public DataSet getDataSet(string query)
+
         {
+            
+            //This is required to retrieve data from the database - GJ
+             
             DataSet dataSet = new DataSet();
 
             using (conToDB = new SqlConnection(conString))
@@ -54,11 +58,14 @@ namespace RM_App_Backend
 
         }
 
-        /*we need a similar method that does not return any dataset for when
-         * we are only saving or updating data in the database
-         */
+        
         public static void saveOrUpdateData( string query)
         {
+            /*
+            *  To save or update data in our database we need a similar function to getDataSet
+            *  that does not return a dataset. This method will accept queries from various service
+            *  classes. - GJ
+            */
             using (conToDB = new SqlConnection(conString))
             {
 

@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace RM_App.Backend_classes.Model
 {
-    internal class User
+    internal abstract class User
     {
+        // Parent class of Client and Relationship Manager
+
         private string firstName;
         private string lastName;
         private string email;
