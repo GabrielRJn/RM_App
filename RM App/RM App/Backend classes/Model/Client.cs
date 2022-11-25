@@ -32,7 +32,7 @@ namespace RM_App.Backend_classes.Model
         {
             this.clientID = clientID;
             this.rmID = rmID;
-            this.prefferedTags = prefferedTags;
+            this.preferredTags = prefferedTags;
             this.products = products;
         }
 
