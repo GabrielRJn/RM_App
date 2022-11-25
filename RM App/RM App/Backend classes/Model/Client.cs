@@ -24,7 +24,7 @@ namespace RM_App.Backend_classes.Model
         private string lastName;
         private string email;
         private int rmID;
-        private List<string> prefferedTags;
+        private List<string> preferredTags;
         private List<string> products;
 
         public Client(int clientID, string firstName, string lastName, string email, int rmID,

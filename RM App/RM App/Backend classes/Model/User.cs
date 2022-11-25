@@ -13,9 +13,7 @@ namespace RM_App.Backend_classes.Model
         private string firstName;
         private string lastName;
         private string email;
-        private string firstName1;
       
-        private string lastName1;
 
         public User(string firstName, string lastName, string email)
         {
