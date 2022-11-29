@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
@@ -105,18 +105,16 @@
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(1, 67);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Location = new System.Drawing.Point(2, 103);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(181, 545);
+            this.panel1.Size = new System.Drawing.Size(272, 838);
             this.panel1.TabIndex = 0;
             // 
             // panel5
             // 
-            this.panel5.Location = new System.Drawing.Point(181, 269);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2);
+            this.panel5.Location = new System.Drawing.Point(272, 414);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(952, 267);
+            this.panel5.Size = new System.Drawing.Size(1428, 411);
             this.panel5.TabIndex = 4;
             // 
             // button4
@@ -125,10 +123,9 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button4.Location = new System.Drawing.Point(2, 558);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
+            this.button4.Location = new System.Drawing.Point(3, 858);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(178, 46);
+            this.button4.Size = new System.Drawing.Size(267, 71);
             this.button4.TabIndex = 4;
             this.button4.Text = "Log out";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -141,10 +138,9 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Location = new System.Drawing.Point(5, 100);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Location = new System.Drawing.Point(8, 154);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(178, 46);
+            this.button3.Size = new System.Drawing.Size(267, 71);
             this.button3.TabIndex = 3;
             this.button3.Text = "View ideas";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -157,10 +153,9 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(5, 56);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Location = new System.Drawing.Point(8, 86);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(178, 46);
+            this.button2.Size = new System.Drawing.Size(267, 71);
             this.button2.TabIndex = 2;
             this.button2.Text = "View clients";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -173,10 +168,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(2, 6);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Location = new System.Drawing.Point(3, 9);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(178, 46);
+            this.button1.Size = new System.Drawing.Size(267, 71);
             this.button1.TabIndex = 1;
             this.button1.Text = "Home";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -189,8 +183,7 @@
             this.label1.BackColor = System.Drawing.SystemColors.MenuText;
             this.label1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(43, 158);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(64, 243);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 30);
             this.label1.TabIndex = 0;
@@ -200,8 +193,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(9, 32);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(14, 49);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(162, 28);
             this.label2.TabIndex = 6;
@@ -214,8 +206,7 @@
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(9, 12);
-            this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.linkLabel1.Location = new System.Drawing.Point(14, 18);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(86, 32);
             this.linkLabel1.TabIndex = 5;
@@ -231,19 +222,17 @@
             this.panel2.Controls.Add(this.linkLabel1);
             this.panel2.Controls.Add(this.button5);
             this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Location = new System.Drawing.Point(-1, -1);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(-2, -2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1130, 68);
+            this.panel2.Size = new System.Drawing.Size(1695, 105);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // panel3
             // 
-            this.panel3.Location = new System.Drawing.Point(0, 96);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Location = new System.Drawing.Point(0, 148);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(818, 509);
+            this.panel3.Size = new System.Drawing.Size(1227, 783);
             this.panel3.TabIndex = 2;
             // 
             // button5
@@ -252,10 +241,9 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button5.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(563, 25);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
+            this.button5.Location = new System.Drawing.Point(844, 38);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(63, 26);
+            this.button5.Size = new System.Drawing.Size(94, 40);
             this.button5.TabIndex = 1;
             this.button5.Text = "Search";
             this.button5.UseVisualStyleBackColor = false;
@@ -263,11 +251,10 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(234, 25);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Location = new System.Drawing.Point(351, 38);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(333, 27);
+            this.textBox1.Size = new System.Drawing.Size(498, 39);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -289,10 +276,9 @@
             this.panel4.Controls.Add(this.label3);
             this.panel4.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel4.Location = new System.Drawing.Point(0, 2);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2);
+            this.panel4.Location = new System.Drawing.Point(0, 3);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(951, 52);
+            this.panel4.Size = new System.Drawing.Size(1426, 80);
             this.panel4.TabIndex = 2;
             // 
             // label6
@@ -300,8 +286,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label6.Location = new System.Drawing.Point(725, 18);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(1088, 28);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(180, 32);
             this.label6.TabIndex = 7;
@@ -313,10 +298,9 @@
             this.FilterBy.Items.AddRange(new object[] {
             "Date",
             "Name (A-Z)"});
-            this.FilterBy.Location = new System.Drawing.Point(843, 21);
-            this.FilterBy.Margin = new System.Windows.Forms.Padding(2);
+            this.FilterBy.Location = new System.Drawing.Point(1264, 32);
             this.FilterBy.Name = "FilterBy";
-            this.FilterBy.Size = new System.Drawing.Size(102, 33);
+            this.FilterBy.Size = new System.Drawing.Size(151, 33);
             this.FilterBy.TabIndex = 10;
             this.FilterBy.SelectedIndexChanged += new System.EventHandler(this.FilterBy_SelectedIndexChanged);
             // 
@@ -326,10 +310,9 @@
             this.addClientButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.addClientButton.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addClientButton.ForeColor = System.Drawing.Color.White;
-            this.addClientButton.Location = new System.Drawing.Point(603, 16);
-            this.addClientButton.Margin = new System.Windows.Forms.Padding(2);
+            this.addClientButton.Location = new System.Drawing.Point(904, 25);
             this.addClientButton.Name = "addClientButton";
-            this.addClientButton.Size = new System.Drawing.Size(92, 26);
+            this.addClientButton.Size = new System.Drawing.Size(138, 40);
             this.addClientButton.TabIndex = 8;
             this.addClientButton.Text = "Add Client";
             this.addClientButton.UseVisualStyleBackColor = false;
@@ -339,8 +322,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(476, 57);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(714, 88);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(135, 32);
             this.label5.TabIndex = 2;
@@ -350,8 +332,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(339, 57);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(508, 88);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(60, 32);
             this.label4.TabIndex = 1;
@@ -361,8 +342,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(38, 57);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(57, 88);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(147, 32);
             this.label3.TabIndex = 0;
@@ -386,9 +366,9 @@
             // clientsDisplay
             // 
             this.clientsDisplay.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.clientsDisplay.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.clientsDisplay.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.clientsDisplay.AutoGenerateColumns = false;
             this.clientsDisplay.BackgroundColor = System.Drawing.Color.White;
             this.clientsDisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -402,12 +382,11 @@
             this.preferredproductsDataGridViewTextBoxColumn});
             this.clientsDisplay.DataSource = this.clientsBindingSource2;
             this.clientsDisplay.GridColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.clientsDisplay.Location = new System.Drawing.Point(-1, 50);
-            this.clientsDisplay.Margin = new System.Windows.Forms.Padding(2);
+            this.clientsDisplay.Location = new System.Drawing.Point(-2, 77);
             this.clientsDisplay.Name = "clientsDisplay";
             this.clientsDisplay.RowHeadersWidth = 62;
             this.clientsDisplay.RowTemplate.Height = 28;
-            this.clientsDisplay.Size = new System.Drawing.Size(952, 493);
+            this.clientsDisplay.Size = new System.Drawing.Size(1428, 758);
             this.clientsDisplay.TabIndex = 3;
             this.clientsDisplay.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
@@ -485,10 +464,9 @@
             this.viewClientsPanel.Controls.Add(this.addClientPanel);
             this.viewClientsPanel.Controls.Add(this.clientsDisplay);
             this.viewClientsPanel.Controls.Add(this.panel4);
-            this.viewClientsPanel.Location = new System.Drawing.Point(177, 67);
-            this.viewClientsPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.viewClientsPanel.Location = new System.Drawing.Point(266, 103);
             this.viewClientsPanel.Name = "viewClientsPanel";
-            this.viewClientsPanel.Size = new System.Drawing.Size(951, 545);
+            this.viewClientsPanel.Size = new System.Drawing.Size(1426, 838);
             this.viewClientsPanel.TabIndex = 4;
             this.viewClientsPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.viewClientsPanel_Paint);
             // 
@@ -508,28 +486,25 @@
             this.addClientPanel.Controls.Add(this.firstNameBox);
             this.addClientPanel.Controls.Add(this.label7);
             this.addClientPanel.Location = new System.Drawing.Point(0, 0);
-            this.addClientPanel.Margin = new System.Windows.Forms.Padding(2);
             this.addClientPanel.Name = "addClientPanel";
-            this.addClientPanel.Size = new System.Drawing.Size(951, 538);
+            this.addClientPanel.Size = new System.Drawing.Size(1426, 828);
             this.addClientPanel.TabIndex = 4;
             this.addClientPanel.Visible = false;
             this.addClientPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.addClientPanel_Paint);
             // 
             // riskBox
             // 
-            this.riskBox.Location = new System.Drawing.Point(62, 434);
-            this.riskBox.Margin = new System.Windows.Forms.Padding(2);
+            this.riskBox.Location = new System.Drawing.Point(93, 668);
             this.riskBox.Multiline = true;
             this.riskBox.Name = "riskBox";
-            this.riskBox.Size = new System.Drawing.Size(43, 24);
+            this.riskBox.Size = new System.Drawing.Size(62, 35);
             this.riskBox.TabIndex = 14;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(58, 403);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Location = new System.Drawing.Point(87, 620);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(182, 32);
             this.label12.TabIndex = 13;
@@ -539,8 +514,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(58, 295);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Location = new System.Drawing.Point(87, 454);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(60, 32);
             this.label11.TabIndex = 12;
@@ -558,19 +532,17 @@
             "Tag 2",
             "Tag 3",
             "Tag 4"});
-            this.tagsBox.Location = new System.Drawing.Point(62, 327);
-            this.tagsBox.Margin = new System.Windows.Forms.Padding(2);
+            this.tagsBox.Location = new System.Drawing.Point(93, 503);
             this.tagsBox.MultiColumn = true;
             this.tagsBox.Name = "tagsBox";
-            this.tagsBox.Size = new System.Drawing.Size(454, 62);
+            this.tagsBox.Size = new System.Drawing.Size(681, 93);
             this.tagsBox.TabIndex = 11;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(306, 124);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(459, 191);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(122, 32);
             this.label10.TabIndex = 10;
@@ -580,8 +552,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(58, 124);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(87, 191);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(125, 32);
             this.label9.TabIndex = 9;
@@ -591,8 +562,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(58, 211);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(87, 325);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(71, 32);
             this.label8.TabIndex = 8;
@@ -604,10 +574,9 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button6.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(62, 486);
-            this.button6.Margin = new System.Windows.Forms.Padding(2);
+            this.button6.Location = new System.Drawing.Point(93, 748);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(104, 26);
+            this.button6.Size = new System.Drawing.Size(156, 40);
             this.button6.TabIndex = 7;
             this.button6.Text = "Save client";
             this.button6.UseVisualStyleBackColor = false;
@@ -615,32 +584,29 @@
             // 
             // emailBox
             // 
-            this.emailBox.Location = new System.Drawing.Point(62, 233);
-            this.emailBox.Margin = new System.Windows.Forms.Padding(2);
+            this.emailBox.Location = new System.Drawing.Point(93, 358);
             this.emailBox.Multiline = true;
             this.emailBox.Name = "emailBox";
-            this.emailBox.Size = new System.Drawing.Size(454, 28);
+            this.emailBox.Size = new System.Drawing.Size(679, 41);
             this.emailBox.TabIndex = 3;
             this.emailBox.TextChanged += new System.EventHandler(this.emailBox_TextChanged);
             // 
             // lastNameBox
             // 
-            this.lastNameBox.Location = new System.Drawing.Point(309, 146);
-            this.lastNameBox.Margin = new System.Windows.Forms.Padding(2);
+            this.lastNameBox.Location = new System.Drawing.Point(464, 225);
             this.lastNameBox.Multiline = true;
             this.lastNameBox.Name = "lastNameBox";
-            this.lastNameBox.Size = new System.Drawing.Size(207, 28);
+            this.lastNameBox.Size = new System.Drawing.Size(308, 41);
             this.lastNameBox.TabIndex = 2;
             this.lastNameBox.TextChanged += new System.EventHandler(this.lastNameBox_TextChanged);
             // 
             // firstNameBox
             // 
             this.firstNameBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.firstNameBox.Location = new System.Drawing.Point(62, 147);
-            this.firstNameBox.Margin = new System.Windows.Forms.Padding(2);
+            this.firstNameBox.Location = new System.Drawing.Point(93, 226);
             this.firstNameBox.Multiline = true;
             this.firstNameBox.Name = "firstNameBox";
-            this.firstNameBox.Size = new System.Drawing.Size(207, 27);
+            this.firstNameBox.Size = new System.Drawing.Size(310, 40);
             this.firstNameBox.TabIndex = 1;
             this.firstNameBox.TextChanged += new System.EventHandler(this.firstNameBox_TextChanged);
             // 
@@ -648,8 +614,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Yu Gothic UI Light", 28F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(47, 29);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(70, 45);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(276, 74);
             this.label7.TabIndex = 0;
@@ -662,14 +627,13 @@
             // 
             // Clients_page
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1129, 612);
+            this.ClientSize = new System.Drawing.Size(1694, 942);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.viewClientsPanel);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "Clients_page";
             this.ShowIcon = false;

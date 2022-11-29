@@ -28,11 +28,11 @@ namespace RM_App.Backend_classes.Model
         private List<string> products;
 
         public Client(int clientID, string firstName, string lastName, string email, int rmID,
-            List<string> prefferedTags, List<string> products) : base(firstName, lastName, email)
+            List<string> preferredTags, List<string> products) : base(firstName, lastName, email)
         {
             this.clientID = clientID;
             this.rmID = rmID;
-            this.preferredTags = prefferedTags;
+            this.preferredTags = preferredTags;
             this.products = products;
         }
 
@@ -66,7 +66,7 @@ namespace RM_App.Backend_classes.Model
         public string LastName { get => lastName; set => lastName = value; }
         public string Email { get => email; set => email = value; }
         public int RmID { get => rmID; set => rmID = value; }
-        public List<string> PrefferedTags { get => prefferedTags; set => prefferedTags = value; }
+        public List<string> PrefferedTags { get => preferredTags; set => preferredTags = value; }
         public List<string> Products { get => products; set => products = value; }
     }
 }
