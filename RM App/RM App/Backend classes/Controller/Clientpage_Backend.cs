@@ -72,5 +72,9 @@ namespace RM_App.Backend_classes.Controller
             }
         }
 
+        internal static void filterResults(DataGridView clientsDisplay)
+        {
+            clientsDisplay.DataSource = ClientService.alphabeticalgetAllClients();
+        }
     }
 }

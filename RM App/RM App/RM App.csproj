@@ -86,7 +86,7 @@
     </Compile>
     <Compile Include="Backend classes\Controller\Clientpage_Backend.cs" />
     <Compile Include="Backend classes\Controller\Loginpage_Backend.cs" />
-    <Compile Include="Backend classes\Controller\MultipageFunctions.cs" />
+    <Compile Include="Backend classes\Controller\NavbarFunctions.cs" />
     <Compile Include="Backend classes\Model\Client.cs" />
     <Compile Include="Backend classes\Model\Idea.cs" />
     <Compile Include="Backend classes\Model\RelationshipManager.cs" />

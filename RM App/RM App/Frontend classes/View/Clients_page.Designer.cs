@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
@@ -54,12 +53,6 @@
             this.appInformationDataSet = new RM_App.Backend_classes.Repository.AppInformationDataSet();
             this.clientsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.clientsTableAdapter = new RM_App.Backend_classes.Repository.AppInformationDataSetTableAdapters.clientsTableAdapter();
-            this.clientsDisplay = new System.Windows.Forms.DataGridView();
-            this.firstnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lastnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.preferredtagsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.preferredproductsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clientsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.clientdisplay = new RM_App.clientdisplay();
             this.clientsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -83,12 +76,19 @@
             this.clientsTableAdapter2 = new RM_App.clientdisplayTableAdapters.clientsTableAdapter();
             this.errorLabel = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
+            this.clientsDisplay = new System.Windows.Forms.DataGridView();
+            this.clientIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.firstnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lastnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.preferredtagsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.preferredproductsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rMIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.appInformationDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientsDisplay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientdisplay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource1)).BeginInit();
@@ -96,6 +96,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.appInformationDataSet2)).BeginInit();
             this.viewClientsPanel.SuspendLayout();
             this.addClientPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.clientsDisplay)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -365,73 +366,6 @@
             // 
             this.clientsTableAdapter.ClearBeforeFill = true;
             // 
-            // clientsDisplay
-            // 
-            this.clientsDisplay.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.clientsDisplay.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
-            this.clientsDisplay.AutoGenerateColumns = false;
-            this.clientsDisplay.BackgroundColor = System.Drawing.Color.White;
-            this.clientsDisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.clientsDisplay.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.clientsDisplay.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.clientsDisplay.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.firstnameDataGridViewTextBoxColumn,
-            this.lastnameDataGridViewTextBoxColumn,
-            this.emailDataGridViewTextBoxColumn,
-            this.preferredtagsDataGridViewTextBoxColumn,
-            this.preferredproductsDataGridViewTextBoxColumn});
-            this.clientsDisplay.DataSource = this.clientsBindingSource2;
-            this.clientsDisplay.GridColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.clientsDisplay.Location = new System.Drawing.Point(-2, 77);
-            this.clientsDisplay.Name = "clientsDisplay";
-            this.clientsDisplay.RowHeadersWidth = 62;
-            this.clientsDisplay.RowTemplate.Height = 28;
-            this.clientsDisplay.Size = new System.Drawing.Size(1428, 758);
-            this.clientsDisplay.TabIndex = 3;
-            this.clientsDisplay.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
-            // 
-            // firstnameDataGridViewTextBoxColumn
-            // 
-            this.firstnameDataGridViewTextBoxColumn.DataPropertyName = "first_name";
-            this.firstnameDataGridViewTextBoxColumn.HeaderText = "first_name";
-            this.firstnameDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.firstnameDataGridViewTextBoxColumn.Name = "firstnameDataGridViewTextBoxColumn";
-            this.firstnameDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // lastnameDataGridViewTextBoxColumn
-            // 
-            this.lastnameDataGridViewTextBoxColumn.DataPropertyName = "last_name";
-            this.lastnameDataGridViewTextBoxColumn.HeaderText = "last_name";
-            this.lastnameDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.lastnameDataGridViewTextBoxColumn.Name = "lastnameDataGridViewTextBoxColumn";
-            this.lastnameDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // emailDataGridViewTextBoxColumn
-            // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "email";
-            this.emailDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            this.emailDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // preferredtagsDataGridViewTextBoxColumn
-            // 
-            this.preferredtagsDataGridViewTextBoxColumn.DataPropertyName = "preferred_tags";
-            this.preferredtagsDataGridViewTextBoxColumn.HeaderText = "preferred_tags";
-            this.preferredtagsDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.preferredtagsDataGridViewTextBoxColumn.Name = "preferredtagsDataGridViewTextBoxColumn";
-            this.preferredtagsDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // preferredproductsDataGridViewTextBoxColumn
-            // 
-            this.preferredproductsDataGridViewTextBoxColumn.DataPropertyName = "preferred_products";
-            this.preferredproductsDataGridViewTextBoxColumn.HeaderText = "preferred_products";
-            this.preferredproductsDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.preferredproductsDataGridViewTextBoxColumn.Name = "preferredproductsDataGridViewTextBoxColumn";
-            this.preferredproductsDataGridViewTextBoxColumn.Width = 150;
-            // 
             // clientsBindingSource2
             // 
             this.clientsBindingSource2.DataMember = "clients";
@@ -464,8 +398,8 @@
             // viewClientsPanel
             // 
             this.viewClientsPanel.Controls.Add(this.addClientPanel);
-            this.viewClientsPanel.Controls.Add(this.clientsDisplay);
             this.viewClientsPanel.Controls.Add(this.panel4);
+            this.viewClientsPanel.Controls.Add(this.clientsDisplay);
             this.viewClientsPanel.Location = new System.Drawing.Point(266, 103);
             this.viewClientsPanel.Name = "viewClientsPanel";
             this.viewClientsPanel.Size = new System.Drawing.Size(1426, 838);
@@ -488,9 +422,9 @@
             this.addClientPanel.Controls.Add(this.lastNameBox);
             this.addClientPanel.Controls.Add(this.firstNameBox);
             this.addClientPanel.Controls.Add(this.label7);
-            this.addClientPanel.Location = new System.Drawing.Point(8, 0);
+            this.addClientPanel.Location = new System.Drawing.Point(8, 74);
             this.addClientPanel.Name = "addClientPanel";
-            this.addClientPanel.Size = new System.Drawing.Size(1418, 838);
+            this.addClientPanel.Size = new System.Drawing.Size(1418, 764);
             this.addClientPanel.TabIndex = 4;
             this.addClientPanel.Visible = false;
             this.addClientPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.addClientPanel_Paint);
@@ -656,6 +590,84 @@
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click_1);
             // 
+            // clientsDisplay
+            // 
+            this.clientsDisplay.AutoGenerateColumns = false;
+            this.clientsDisplay.BackgroundColor = System.Drawing.Color.White;
+            this.clientsDisplay.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.clientsDisplay.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.clientIDDataGridViewTextBoxColumn,
+            this.firstnameDataGridViewTextBoxColumn,
+            this.lastnameDataGridViewTextBoxColumn,
+            this.emailDataGridViewTextBoxColumn,
+            this.preferredtagsDataGridViewTextBoxColumn,
+            this.preferredproductsDataGridViewTextBoxColumn,
+            this.rMIDDataGridViewTextBoxColumn});
+            this.clientsDisplay.DataSource = this.clientsBindingSource;
+            this.clientsDisplay.Location = new System.Drawing.Point(11, 86);
+            this.clientsDisplay.Name = "clientsDisplay";
+            this.clientsDisplay.RowHeadersWidth = 62;
+            this.clientsDisplay.RowTemplate.Height = 28;
+            this.clientsDisplay.Size = new System.Drawing.Size(1419, 555);
+            this.clientsDisplay.TabIndex = 5;
+            // 
+            // clientIDDataGridViewTextBoxColumn
+            // 
+            this.clientIDDataGridViewTextBoxColumn.DataPropertyName = "Client_ID";
+            this.clientIDDataGridViewTextBoxColumn.HeaderText = "Client_ID";
+            this.clientIDDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.clientIDDataGridViewTextBoxColumn.Name = "clientIDDataGridViewTextBoxColumn";
+            this.clientIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.clientIDDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // firstnameDataGridViewTextBoxColumn
+            // 
+            this.firstnameDataGridViewTextBoxColumn.DataPropertyName = "first_name";
+            this.firstnameDataGridViewTextBoxColumn.HeaderText = "first_name";
+            this.firstnameDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.firstnameDataGridViewTextBoxColumn.Name = "firstnameDataGridViewTextBoxColumn";
+            this.firstnameDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // lastnameDataGridViewTextBoxColumn
+            // 
+            this.lastnameDataGridViewTextBoxColumn.DataPropertyName = "last_name";
+            this.lastnameDataGridViewTextBoxColumn.HeaderText = "last_name";
+            this.lastnameDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.lastnameDataGridViewTextBoxColumn.Name = "lastnameDataGridViewTextBoxColumn";
+            this.lastnameDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "email";
+            this.emailDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            this.emailDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // preferredtagsDataGridViewTextBoxColumn
+            // 
+            this.preferredtagsDataGridViewTextBoxColumn.DataPropertyName = "preferred_tags";
+            this.preferredtagsDataGridViewTextBoxColumn.HeaderText = "preferred_tags";
+            this.preferredtagsDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.preferredtagsDataGridViewTextBoxColumn.Name = "preferredtagsDataGridViewTextBoxColumn";
+            this.preferredtagsDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // preferredproductsDataGridViewTextBoxColumn
+            // 
+            this.preferredproductsDataGridViewTextBoxColumn.DataPropertyName = "preferred_products";
+            this.preferredproductsDataGridViewTextBoxColumn.HeaderText = "preferred_products";
+            this.preferredproductsDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.preferredproductsDataGridViewTextBoxColumn.Name = "preferredproductsDataGridViewTextBoxColumn";
+            this.preferredproductsDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // rMIDDataGridViewTextBoxColumn
+            // 
+            this.rMIDDataGridViewTextBoxColumn.DataPropertyName = "RM_ID";
+            this.rMIDDataGridViewTextBoxColumn.HeaderText = "RM_ID";
+            this.rMIDDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.rMIDDataGridViewTextBoxColumn.Name = "rMIDDataGridViewTextBoxColumn";
+            this.rMIDDataGridViewTextBoxColumn.Width = 150;
+            // 
             // Clients_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -678,7 +690,6 @@
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.appInformationDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientsDisplay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientdisplay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource1)).EndInit();
@@ -687,6 +698,7 @@
             this.viewClientsPanel.ResumeLayout(false);
             this.addClientPanel.ResumeLayout(false);
             this.addClientPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.clientsDisplay)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -713,7 +725,6 @@
         private RM_App.Backend_classes.Repository.AppInformationDataSet appInformationDataSet;
         private System.Windows.Forms.BindingSource clientsBindingSource;
         private RM_App.Backend_classes.Repository.AppInformationDataSetTableAdapters.clientsTableAdapter clientsTableAdapter;
-        private System.Windows.Forms.DataGridView clientsDisplay;
         private RM_App.Backend_classes.Repository.AppInformationDataSet1 appInformationDataSet1;
         private System.Windows.Forms.BindingSource clientsBindingSource1;
         private RM_App.Backend_classes.Repository.AppInformationDataSet1TableAdapters.clientsTableAdapter clientsTableAdapter1;
@@ -735,16 +746,19 @@
         private System.Windows.Forms.TextBox emailBox;
         private System.Windows.Forms.TextBox lastNameBox;
         private System.Windows.Forms.TextBox firstNameBox;
-        private System.Windows.Forms.DataGridViewTextBoxColumn firstnameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lastnameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn preferredtagsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn preferredproductsDataGridViewTextBoxColumn;
         private RM_App.clientdisplay clientdisplay;
         private System.Windows.Forms.BindingSource clientsBindingSource2;
         private RM_App.clientdisplayTableAdapters.clientsTableAdapter clientsTableAdapter2;
         private System.Windows.Forms.Label errorLabel;
         protected internal System.Windows.Forms.CheckedListBox tagsBox;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.DataGridView clientsDisplay;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clientIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn firstnameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lastnameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn preferredtagsDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn preferredproductsDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rMIDDataGridViewTextBoxColumn;
     }
 }

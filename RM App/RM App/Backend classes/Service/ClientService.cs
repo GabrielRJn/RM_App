@@ -27,7 +27,7 @@ namespace RM_App.Backend_classes.Service
         public static DataTable alphabeticalgetAllClients()
         {
 
-            DataSet clientAlphabetResults = Connection.getDBConnection().getDataSet("SELECT * FROM clients, ORDER BY first_name ASC");
+            DataSet clientAlphabetResults = Connection.getDBConnection().getDataSet("SELECT * FROM clients ORDER BY first_name ASC");
             return clientAlphabetResults.Tables[0]; 
 
         }

@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using RM_App.Backend_classes.Controller;
 using RM_App.Backend_classes.Model;
+using RM_App.Backend_classes.Service;
 
 namespace RM_App_FrontEnd
 {
@@ -24,6 +25,7 @@ namespace RM_App_FrontEnd
         {
 
              Clientpage_Backend.loadProfile(linkLabel1, label2);
+            clientsDisplay.DataSource = ClientService.getAllClients();
             // TODO: This line of code loads data into the 'clientdisplay.clients' table. You can move, or remove it, as needed.
             this.clientsTableAdapter2.Fill(this.clientdisplay.clients);
            
@@ -32,7 +34,7 @@ namespace RM_App_FrontEnd
         private void button3_Click(object sender, EventArgs e)
         {
             button3.FlatAppearance.BorderSize = 0;
-            MultipageFunctions.showNewPage(this, new Ideas_page());
+            NavbarFunctions.showNewPage(this, new Ideas_page());
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -67,7 +69,7 @@ namespace RM_App_FrontEnd
         }
         private void button4_Click(object sender, EventArgs e)
         {
-            RM_App.Backend_classes.Controller.MultipageFunctions.showNewPage(this, new Login_page());
+            RM_App.Backend_classes.Controller.NavbarFunctions.showNewPage(this, new Login_page());
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -92,7 +94,7 @@ namespace RM_App_FrontEnd
 
         private void FilterBy_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            Clientpage_Backend.filterResults(clientsDisplay);
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -163,7 +165,7 @@ namespace RM_App_FrontEnd
 
         private void button7_Click_1(object sender, EventArgs e)
         {
-            MultipageFunctions.showNewPage(this, new Login_page());
+            NavbarFunctions.showNewPage(this, new Login_page());
         }
     }
 }
