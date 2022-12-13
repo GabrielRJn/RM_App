@@ -38,7 +38,7 @@ namespace RM_App_FrontEnd
         private void button2_Click(object sender, EventArgs e)
         {
             button2.FlatAppearance.BorderSize = 0;
-            MultipageFunctions.showNewPage(this, new Clients_page());
+            NavbarFunctions.showNewPage(this, new Clients_page());
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -68,7 +68,7 @@ namespace RM_App_FrontEnd
         }
         private void button4_Click(object sender, EventArgs e)
         {
-            RM_App.Backend_classes.Controller.MultipageFunctions.showNewPage(this, new Login_page());
+            RM_App.Backend_classes.Controller.NavbarFunctions.showNewPage(this, new Login_page());
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -170,7 +170,7 @@ namespace RM_App_FrontEnd
 
         private void button7_Click_1(object sender, EventArgs e)
         {
-            MultipageFunctions.showNewPage(this, new Login_page());
+            NavbarFunctions.showNewPage(this, new Login_page());
         }
     }
 }
