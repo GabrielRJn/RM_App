@@ -14,13 +14,24 @@ namespace RM_App.Backend_classes.Service
 {
     internal class ClientService
     {
+     
+
         public static DataTable getAllClients()
         {
             
-            DataSet ds = Connection.getDBConnection().getDataSet("SELECT * FROM clients");
-            return ds.Tables[0];
+            DataSet clientResults = Connection.getDBConnection().getDataSet("SELECT * FROM clients");
+            return clientResults.Tables[0];
 
         }
+
+        public static DataTable alphabeticalgetAllClients()
+        {
+
+            DataSet clientAlphabetResults = Connection.getDBConnection().getDataSet("SELECT * FROM clients, ORDER BY first_name ASC");
+            return clientAlphabetResults.Tables[0]; 
+
+        }
+
 
         public static void insertClientData(Client newClient)
         {

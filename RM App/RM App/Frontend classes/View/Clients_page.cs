@@ -22,6 +22,8 @@ namespace RM_App_FrontEnd
 
         private void Clients_page_Load(object sender, EventArgs e)
         {
+
+             Clientpage_Backend.loadProfile(linkLabel1, label2);
             // TODO: This line of code loads data into the 'clientdisplay.clients' table. You can move, or remove it, as needed.
             this.clientsTableAdapter2.Fill(this.clientdisplay.clients);
            
@@ -70,7 +72,7 @@ namespace RM_App_FrontEnd
 
         private void label2_Click(object sender, EventArgs e)
         {
-
+           
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

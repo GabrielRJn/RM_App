@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
@@ -193,12 +193,11 @@
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(14, 49);
+            this.label2.Location = new System.Drawing.Point(15, 50);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(162, 28);
+            this.label2.Size = new System.Drawing.Size(250, 28);
             this.label2.TabIndex = 6;
             this.label2.Text = "Email@user.co.uk";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -369,9 +368,9 @@
             // clientsDisplay
             // 
             this.clientsDisplay.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.clientsDisplay.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.clientsDisplay.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
             this.clientsDisplay.AutoGenerateColumns = false;
             this.clientsDisplay.BackgroundColor = System.Drawing.Color.White;
             this.clientsDisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -489,9 +488,9 @@
             this.addClientPanel.Controls.Add(this.lastNameBox);
             this.addClientPanel.Controls.Add(this.firstNameBox);
             this.addClientPanel.Controls.Add(this.label7);
-            this.addClientPanel.Location = new System.Drawing.Point(0, 0);
+            this.addClientPanel.Location = new System.Drawing.Point(8, 0);
             this.addClientPanel.Name = "addClientPanel";
-            this.addClientPanel.Size = new System.Drawing.Size(1426, 838);
+            this.addClientPanel.Size = new System.Drawing.Size(1418, 838);
             this.addClientPanel.TabIndex = 4;
             this.addClientPanel.Visible = false;
             this.addClientPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.addClientPanel_Paint);
