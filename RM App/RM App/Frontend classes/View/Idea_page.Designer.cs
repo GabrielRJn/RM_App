@@ -74,18 +74,22 @@
             this.appInformationDataSet2 = new RM_App.Backend_classes.Repository.AppInformationDataSet();
             this.viewClientsPanel = new System.Windows.Forms.Panel();
             this.ideasDisplay = new System.Windows.Forms.DataGridView();
+            this.ideasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ideasData = new RM_App.ideasData();
             this.clientsTableAdapter2 = new RM_App.clientdisplayTableAdapters.clientsTableAdapter();
             this.clientsBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.ideasData = new RM_App.ideasData();
-            this.ideasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ideasTableAdapter1 = new RM_App.ideasDataTableAdapters.ideasTableAdapter();
+            this.appInformationDataSet3 = new RM_App.AppInformationDataSet();
+            this.ideasTableAdapter = new RM_App.AppInformationDataSetTableAdapters.ideasTableAdapter();
+            this.tableAdapterManager = new RM_App.AppInformationDataSetTableAdapters.TableAdapterManager();
+            this.clientsBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.appInformationDataSet11 = new RM_App.AppInformationDataSet1();
+            this.appInformationDataSet11BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ideasBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.timeCreatedDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.appInformationDataSet3 = new RM_App.AppInformationDataSet();
-            this.ideasTableAdapter = new RM_App.AppInformationDataSetTableAdapters.ideasTableAdapter();
-            this.tableAdapterManager = new RM_App.AppInformationDataSetTableAdapters.TableAdapterManager();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -99,10 +103,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.appInformationDataSet2)).BeginInit();
             this.viewClientsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ideasDisplay)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ideasData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ideasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ideasData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appInformationDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.appInformationDataSet11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.appInformationDataSet11BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ideasBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -565,7 +573,7 @@
             this.nameDataGridViewTextBoxColumn,
             this.descriptionDataGridViewTextBoxColumn,
             this.timeCreatedDataGridViewImageColumn});
-            this.ideasDisplay.DataSource = this.ideasBindingSource;
+            this.ideasDisplay.DataSource = this.ideasBindingSource1;
             this.ideasDisplay.GridColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ideasDisplay.Location = new System.Drawing.Point(-2, 77);
             this.ideasDisplay.Name = "ideasDisplay";
@@ -576,6 +584,16 @@
             this.ideasDisplay.Visible = false;
             this.ideasDisplay.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
+            // ideasBindingSource
+            // 
+            this.ideasBindingSource.DataMember = "ideas";
+            this.ideasBindingSource.DataSource = this.ideasData;
+            // 
+            // ideasData
+            // 
+            this.ideasData.DataSetName = "ideasData";
+            this.ideasData.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // clientsTableAdapter2
             // 
             this.clientsTableAdapter2.ClearBeforeFill = true;
@@ -585,19 +603,44 @@
             this.clientsBindingSource3.DataMember = "clients";
             this.clientsBindingSource3.DataSource = this.appInformationDataSet;
             // 
-            // ideasData
-            // 
-            this.ideasData.DataSetName = "ideasData";
-            this.ideasData.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // ideasBindingSource
-            // 
-            this.ideasBindingSource.DataMember = "ideas";
-            this.ideasBindingSource.DataSource = this.ideasData;
-            // 
             // ideasTableAdapter1
             // 
             this.ideasTableAdapter1.ClearBeforeFill = true;
+            // 
+            // appInformationDataSet3
+            // 
+            this.appInformationDataSet3.DataSetName = "AppInformationDataSet";
+            this.appInformationDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // ideasTableAdapter
+            // 
+            this.ideasTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.ideasTableAdapter = this.ideasTableAdapter;
+            this.tableAdapterManager.UpdateOrder = RM_App.AppInformationDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // clientsBindingSource4
+            // 
+            this.clientsBindingSource4.DataMember = "clients";
+            this.clientsBindingSource4.DataSource = this.appInformationDataSet1;
+            // 
+            // appInformationDataSet11
+            // 
+            this.appInformationDataSet11.DataSetName = "AppInformationDataSet1";
+            this.appInformationDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // appInformationDataSet11BindingSource
+            // 
+            this.appInformationDataSet11BindingSource.DataSource = this.appInformationDataSet11;
+            this.appInformationDataSet11BindingSource.Position = 0;
+            // 
+            // ideasBindingSource1
+            // 
+            this.ideasBindingSource1.DataMember = "ideas";
+            this.ideasBindingSource1.DataSource = this.ideasData;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -633,21 +676,6 @@
             this.timeCreatedDataGridViewImageColumn.ReadOnly = true;
             this.timeCreatedDataGridViewImageColumn.Width = 150;
             // 
-            // appInformationDataSet3
-            // 
-            this.appInformationDataSet3.DataSetName = "AppInformationDataSet";
-            this.appInformationDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // ideasTableAdapter
-            // 
-            this.ideasTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.ideasTableAdapter = this.ideasTableAdapter;
-            this.tableAdapterManager.UpdateOrder = RM_App.AppInformationDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
             // Ideas_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -679,10 +707,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.appInformationDataSet2)).EndInit();
             this.viewClientsPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ideasDisplay)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ideasData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ideasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ideasData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.appInformationDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.appInformationDataSet11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.appInformationDataSet11BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ideasBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -741,9 +773,13 @@
         private RM_App.ideasData ideasData;
         private System.Windows.Forms.BindingSource ideasBindingSource;
         private RM_App.ideasDataTableAdapters.ideasTableAdapter ideasTableAdapter1;
+        private System.Windows.Forms.BindingSource appInformationDataSet11BindingSource;
+        private RM_App.AppInformationDataSet1 appInformationDataSet11;
+        private System.Windows.Forms.BindingSource clientsBindingSource4;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewImageColumn timeCreatedDataGridViewImageColumn;
+        private System.Windows.Forms.BindingSource ideasBindingSource1;
     }
 }

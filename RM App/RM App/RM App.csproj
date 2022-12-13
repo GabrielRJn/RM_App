@@ -79,6 +79,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppInformationDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="AppInformationDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppInformationDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Backend classes\Controller\Clientpage_Backend.cs" />
     <Compile Include="Backend classes\Controller\Loginpage_Backend.cs" />
     <Compile Include="Backend classes\Controller\MultipageFunctions.cs" />
@@ -157,6 +162,17 @@
     </None>
     <None Include="AppInformationDataSet.xss">
       <DependentUpon>AppInformationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AppInformationDataSet1.xsc">
+      <DependentUpon>AppInformationDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AppInformationDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AppInformationDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AppInformationDataSet1.xss">
+      <DependentUpon>AppInformationDataSet1.xsd</DependentUpon>
     </None>
     <None Include="Backend classes\Repository\AppInformationDataSet.xsc">
       <DependentUpon>AppInformationDataSet.xsd</DependentUpon>

@@ -116,8 +116,10 @@ namespace RM_App_FrontEnd
 
         private void button6_Click_1(object sender, EventArgs e)
         {
+            Clientpage_Backend.checkEnteredEmail(emailBox.Text, errorLabel);
             RM_App.Backend_classes.Controller.Clientpage_Backend.saveClient(firstNameBox.Text, lastNameBox.Text, emailBox.Text);
             this.clientsBindingSource2.DataSource = RM_App.Backend_classes.Service.ClientService.getAllClients();
+           
             clientsDisplay.Update();
             addClientPanel.Visible = false;
         }
@@ -143,6 +145,16 @@ namespace RM_App_FrontEnd
         }
 
         private void emailBox_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void tagsBox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

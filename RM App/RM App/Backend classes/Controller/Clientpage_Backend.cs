@@ -6,17 +6,19 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Web.UI.WebControls;
+using System.Windows.Forms;
 using RM_App.Backend_classes.Model;
 using RM_App.Backend_classes.Repository;
 using RM_App.Backend_classes.Service;
 using RM_App_Backend;
 using RM_App_FrontEnd;
+using Label = System.Windows.Forms.Label;
 
 namespace RM_App.Backend_classes.Controller
 {
     internal class Clientpage_Backend
     {
-
+        static Boolean validEmail = false;
       
 
         /*
@@ -26,8 +28,17 @@ namespace RM_App.Backend_classes.Controller
          */
         public static void saveClient(string firstName, string lastName, string email)
         {
-            Client savedClient = new Client(firstName, lastName, email);
-            ClientService.insertClientData(savedClient);
+            if (validEmail)
+            {
+
+                
+                Client savedClient = new Client(firstName, lastName, email);
+                ClientService.insertClientData(savedClient);
+            }
+            else
+            {
+                MessageBox.Show("Some fields are incorrect");
+            }
             
         }
 
@@ -37,13 +48,19 @@ namespace RM_App.Backend_classes.Controller
          * an error message. -GJ 
          */
 
-        public static void checkEnteredEmail(string email, Clients_page label)
+        public static void checkEnteredEmail(string email, Label label)
         {//checks if a valid email is entered
             Regex emailRegex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
             Match match = emailRegex.Match(email);
             if (!match.Success)
             {
+                validEmail = false;
                 label.Text = "You have not entered an email";
+            }
+            else
+            {
+                label.Hide();
+                validEmail = true;
             }
         }
 

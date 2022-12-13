@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
@@ -81,6 +81,7 @@
             this.firstNameBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.clientsTableAdapter2 = new RM_App.clientdisplayTableAdapters.clientsTableAdapter();
+            this.errorLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -366,9 +367,9 @@
             // clientsDisplay
             // 
             this.clientsDisplay.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.clientsDisplay.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.clientsDisplay.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.clientsDisplay.AutoGenerateColumns = false;
             this.clientsDisplay.BackgroundColor = System.Drawing.Color.White;
             this.clientsDisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -473,6 +474,7 @@
             // addClientPanel
             // 
             this.addClientPanel.BackColor = System.Drawing.Color.White;
+            this.addClientPanel.Controls.Add(this.errorLabel);
             this.addClientPanel.Controls.Add(this.riskBox);
             this.addClientPanel.Controls.Add(this.label12);
             this.addClientPanel.Controls.Add(this.label11);
@@ -524,19 +526,21 @@
             // 
             this.tagsBox.AllowDrop = true;
             this.tagsBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tagsBox.CheckOnClick = true;
             this.tagsBox.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tagsBox.FormattingEnabled = true;
-            this.tagsBox.HorizontalExtent = 100;
+            this.tagsBox.HorizontalExtent = 120;
             this.tagsBox.Items.AddRange(new object[] {
-            "Tag 1",
-            "Tag 2",
-            "Tag 3",
-            "Tag 4"});
+            "Technology",
+            "Healthcare",
+            "Financials",
+            "Renewable Energy"});
             this.tagsBox.Location = new System.Drawing.Point(93, 503);
             this.tagsBox.MultiColumn = true;
             this.tagsBox.Name = "tagsBox";
-            this.tagsBox.Size = new System.Drawing.Size(681, 93);
+            this.tagsBox.Size = new System.Drawing.Size(438, 93);
             this.tagsBox.TabIndex = 11;
+            this.tagsBox.SelectedIndexChanged += new System.EventHandler(this.tagsBox_SelectedIndexChanged);
             // 
             // label10
             // 
@@ -625,6 +629,17 @@
             // 
             this.clientsTableAdapter2.ClearBeforeFill = true;
             // 
+            // errorLabel
+            // 
+            this.errorLabel.AutoSize = true;
+            this.errorLabel.ForeColor = System.Drawing.Color.Red;
+            this.errorLabel.Location = new System.Drawing.Point(95, 414);
+            this.errorLabel.Name = "errorLabel";
+            this.errorLabel.Size = new System.Drawing.Size(171, 20);
+            this.errorLabel.TabIndex = 15;
+            this.errorLabel.Text = "* Please enter an email";
+            this.errorLabel.Click += new System.EventHandler(this.label13_Click);
+            // 
             // Clients_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -697,7 +712,6 @@
         private System.Windows.Forms.TextBox riskBox;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.CheckedListBox tagsBox;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
@@ -713,5 +727,7 @@
         private RM_App.clientdisplay clientdisplay;
         private System.Windows.Forms.BindingSource clientsBindingSource2;
         private RM_App.clientdisplayTableAdapters.clientsTableAdapter clientsTableAdapter2;
+        private System.Windows.Forms.Label errorLabel;
+        protected internal System.Windows.Forms.CheckedListBox tagsBox;
     }
 }
