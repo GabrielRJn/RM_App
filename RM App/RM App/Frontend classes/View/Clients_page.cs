@@ -158,5 +158,10 @@ namespace RM_App_FrontEnd
         {
 
         }
+
+        private void button7_Click_1(object sender, EventArgs e)
+        {
+            MultipageFunctions.showNewPage(this, new Login_page());
+        }
     }
 }

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using RM_App.Backend_classes.Controller;
 using RM_App.Backend_classes.Model;
 
 namespace RM_App_FrontEnd
@@ -37,6 +38,7 @@ namespace RM_App_FrontEnd
         private void button2_Click(object sender, EventArgs e)
         {
             button2.FlatAppearance.BorderSize = 0;
+            MultipageFunctions.showNewPage(this, new Clients_page());
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -164,6 +166,11 @@ namespace RM_App_FrontEnd
         private void label6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button7_Click_1(object sender, EventArgs e)
+        {
+            MultipageFunctions.showNewPage(this, new Login_page());
         }
     }
 }

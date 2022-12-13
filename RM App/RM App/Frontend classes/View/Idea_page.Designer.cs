@@ -74,8 +74,13 @@
             this.appInformationDataSet2 = new RM_App.Backend_classes.Repository.AppInformationDataSet();
             this.viewClientsPanel = new System.Windows.Forms.Panel();
             this.ideasDisplay = new System.Windows.Forms.DataGridView();
-            this.ideasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.timeCreatedDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.ideasBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.ideasData = new RM_App.ideasData();
+            this.ideasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.clientsTableAdapter2 = new RM_App.clientdisplayTableAdapters.clientsTableAdapter();
             this.clientsBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.ideasTableAdapter1 = new RM_App.ideasDataTableAdapters.ideasTableAdapter();
@@ -85,11 +90,7 @@
             this.clientsBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.appInformationDataSet11 = new RM_App.AppInformationDataSet1();
             this.appInformationDataSet11BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ideasBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.timeCreatedDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.button7 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -103,19 +104,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.appInformationDataSet2)).BeginInit();
             this.viewClientsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ideasDisplay)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ideasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ideasBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ideasData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ideasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appInformationDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appInformationDataSet11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appInformationDataSet11BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ideasBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button3);
@@ -124,7 +126,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(2, 103);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(272, 838);
+            this.panel1.Size = new System.Drawing.Size(272, 862);
             this.panel1.TabIndex = 0;
             // 
             // panel5
@@ -584,15 +586,54 @@
             this.ideasDisplay.Visible = false;
             this.ideasDisplay.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
-            // ideasBindingSource
+            // idDataGridViewTextBoxColumn
             // 
-            this.ideasBindingSource.DataMember = "ideas";
-            this.ideasBindingSource.DataSource = this.ideasData;
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // descriptionDataGridViewTextBoxColumn
+            // 
+            this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "Description";
+            this.descriptionDataGridViewTextBoxColumn.HeaderText = "Description";
+            this.descriptionDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
+            this.descriptionDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // timeCreatedDataGridViewImageColumn
+            // 
+            this.timeCreatedDataGridViewImageColumn.DataPropertyName = "Time Created";
+            this.timeCreatedDataGridViewImageColumn.HeaderText = "Time Created";
+            this.timeCreatedDataGridViewImageColumn.MinimumWidth = 8;
+            this.timeCreatedDataGridViewImageColumn.Name = "timeCreatedDataGridViewImageColumn";
+            this.timeCreatedDataGridViewImageColumn.ReadOnly = true;
+            this.timeCreatedDataGridViewImageColumn.Width = 150;
+            // 
+            // ideasBindingSource1
+            // 
+            this.ideasBindingSource1.DataMember = "ideas";
+            this.ideasBindingSource1.DataSource = this.ideasData;
             // 
             // ideasData
             // 
             this.ideasData.DataSetName = "ideasData";
             this.ideasData.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // ideasBindingSource
+            // 
+            this.ideasBindingSource.DataMember = "ideas";
+            this.ideasBindingSource.DataSource = this.ideasData;
             // 
             // clientsTableAdapter2
             // 
@@ -637,44 +678,20 @@
             this.appInformationDataSet11BindingSource.DataSource = this.appInformationDataSet11;
             this.appInformationDataSet11BindingSource.Position = 0;
             // 
-            // ideasBindingSource1
+            // button7
             // 
-            this.ideasBindingSource1.DataMember = "ideas";
-            this.ideasBindingSource1.DataSource = this.ideasData;
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            this.idDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.nameDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // descriptionDataGridViewTextBoxColumn
-            // 
-            this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "Description";
-            this.descriptionDataGridViewTextBoxColumn.HeaderText = "Description";
-            this.descriptionDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
-            this.descriptionDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // timeCreatedDataGridViewImageColumn
-            // 
-            this.timeCreatedDataGridViewImageColumn.DataPropertyName = "Time Created";
-            this.timeCreatedDataGridViewImageColumn.HeaderText = "Time Created";
-            this.timeCreatedDataGridViewImageColumn.MinimumWidth = 8;
-            this.timeCreatedDataGridViewImageColumn.Name = "timeCreatedDataGridViewImageColumn";
-            this.timeCreatedDataGridViewImageColumn.ReadOnly = true;
-            this.timeCreatedDataGridViewImageColumn.Width = 150;
+            this.button7.BackColor = System.Drawing.Color.Black;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button7.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button7.Location = new System.Drawing.Point(2, 781);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(267, 71);
+            this.button7.TabIndex = 6;
+            this.button7.Text = "Log out";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click_1);
             // 
             // Ideas_page
             // 
@@ -707,14 +724,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.appInformationDataSet2)).EndInit();
             this.viewClientsPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ideasDisplay)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ideasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ideasBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ideasData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ideasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.appInformationDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.appInformationDataSet11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.appInformationDataSet11BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ideasBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -781,5 +798,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewImageColumn timeCreatedDataGridViewImageColumn;
         private System.Windows.Forms.BindingSource ideasBindingSource1;
+        private System.Windows.Forms.Button button7;
     }
 }

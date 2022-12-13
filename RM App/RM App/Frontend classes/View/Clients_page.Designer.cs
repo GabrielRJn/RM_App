@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
@@ -82,6 +82,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.clientsTableAdapter2 = new RM_App.clientdisplayTableAdapters.clientsTableAdapter();
             this.errorLabel = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -100,6 +101,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button3);
@@ -108,7 +110,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(2, 103);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(272, 838);
+            this.panel1.Size = new System.Drawing.Size(272, 856);
             this.panel1.TabIndex = 0;
             // 
             // panel5
@@ -367,9 +369,9 @@
             // clientsDisplay
             // 
             this.clientsDisplay.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.clientsDisplay.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Yu Gothic UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.clientsDisplay.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
             this.clientsDisplay.AutoGenerateColumns = false;
             this.clientsDisplay.BackgroundColor = System.Drawing.Color.White;
             this.clientsDisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -489,7 +491,7 @@
             this.addClientPanel.Controls.Add(this.label7);
             this.addClientPanel.Location = new System.Drawing.Point(0, 0);
             this.addClientPanel.Name = "addClientPanel";
-            this.addClientPanel.Size = new System.Drawing.Size(1426, 828);
+            this.addClientPanel.Size = new System.Drawing.Size(1426, 838);
             this.addClientPanel.TabIndex = 4;
             this.addClientPanel.Visible = false;
             this.addClientPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.addClientPanel_Paint);
@@ -538,7 +540,7 @@
             this.tagsBox.Location = new System.Drawing.Point(93, 503);
             this.tagsBox.MultiColumn = true;
             this.tagsBox.Name = "tagsBox";
-            this.tagsBox.Size = new System.Drawing.Size(438, 93);
+            this.tagsBox.Size = new System.Drawing.Size(537, 93);
             this.tagsBox.TabIndex = 11;
             this.tagsBox.SelectedIndexChanged += new System.EventHandler(this.tagsBox_SelectedIndexChanged);
             // 
@@ -640,6 +642,21 @@
             this.errorLabel.Text = "* Please enter an email";
             this.errorLabel.Click += new System.EventHandler(this.label13_Click);
             // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.Black;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button7.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button7.Location = new System.Drawing.Point(-1, 767);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(267, 71);
+            this.button7.TabIndex = 5;
+            this.button7.Text = "Log out";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click_1);
+            // 
             // Clients_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -729,5 +746,6 @@
         private RM_App.clientdisplayTableAdapters.clientsTableAdapter clientsTableAdapter2;
         private System.Windows.Forms.Label errorLabel;
         protected internal System.Windows.Forms.CheckedListBox tagsBox;
+        private System.Windows.Forms.Button button7;
     }
 }
