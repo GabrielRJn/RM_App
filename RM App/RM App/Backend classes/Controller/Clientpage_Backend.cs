@@ -76,5 +76,10 @@ namespace RM_App.Backend_classes.Controller
         {
             clientsDisplay.DataSource = ClientService.alphabeticalgetAllClients();
         }
+
+        internal static void searchClient(DataGridView clientsDisplay, string searchQuery)
+        {
+            clientsDisplay.DataSource = ClientService.findClientName(searchQuery);
+        }
     }
 }

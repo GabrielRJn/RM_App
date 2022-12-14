@@ -32,6 +32,12 @@ namespace RM_App.Backend_classes.Service
 
         }
 
+        public static DataTable findClientName(String searchQuery)
+        {
+            DataSet clientNameResults = Connection.getDBConnection().getDataSet("SELECT * FROM clients WHERE first_name LIKE '%" + searchQuery + "%'" + "ORDER BY first_name DESC");
+            return clientNameResults.Tables[0];
+        }
+
 
         public static void insertClientData(Client newClient)
         {
